@@ -88,6 +88,9 @@ textarea {
 
 /* --------------------------BASE HEADER - FOOTER STYLES -----------*/
 
+.content-wrapper {
+  width: 90%;
+}
 
 header,
 footer {
@@ -96,13 +99,16 @@ footer {
   align-items: center;
   flex-flow: column wrap;
 }
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-
+  margin: 0;
 }
 
 header nav {
@@ -110,6 +116,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 
 }
 
@@ -118,6 +125,7 @@ header nav ul {
   justify-content: space-around;
   list-style-type: none;
   padding: 0;
+  width: 44%;
 }
 
 header nav ul li {
@@ -136,7 +144,9 @@ footer .social-icons p {
   align-items: center;
 }
 
-
+.header-divider {
+  width: 100%;
+}
 
 /*---------------------------HERO AREA STYLES-----------------------*/
 
@@ -183,9 +193,18 @@ aside .form-description {
 
 .features .features-items {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+.features article {
+  width: 50%;
+  text-align: center;
+}
+
+.features p {
+  margin: 0;
 }
 
 /*.features .content-wrapper {
@@ -201,9 +220,12 @@ aside .form-description {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
-
 }
+
+.reviews h3 {
+  width: 90%;
+}
+
 
 /*.reviews .content-wrapper {
   display: flex;
@@ -229,13 +251,19 @@ aside .form-description {
 }
 
 /*----------------------------FOOTER STYLES-------------------*/
+
 footer .content-wrapper {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
+  width: 55%;
+  margin: 50px 0;
 }
 
+footer p {
+  margin: 0;
+}
 
 .contact {
   display: flex;
