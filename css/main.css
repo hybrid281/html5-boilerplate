@@ -167,22 +167,6 @@ aside {
   align-items: center;
 }
 
-/*aside .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-aside .form-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
-
 
 /*----------------------------FEATURES STYLES-----------------*/
 
@@ -203,18 +187,16 @@ aside .form-description {
   width: 50%;
   margin: 30px 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features p {
-  margin: 0;
+  /*margin: 0;*/
 }
 
-/*.features .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}*/
 
 /*-----------------------------REVIEWS STYLES-----------------*/
 
@@ -227,13 +209,6 @@ aside .form-description {
 .reviews h3 {
   width: 90%;
 }
-
-
-/*.reviews .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
 
 
 /*-----------------------------ABOUT PAGE - MISSION STYLES------------------*/
@@ -291,6 +266,7 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
 }
+
 
 /*========================================================================== */
 
@@ -382,15 +358,157 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px){
+  /*Tablet styles here*/
+/*General Styles*/
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  header {
+      justify-content: space-between;
+    }
+
+  header .content-wrapper {
+      width: 80%;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+    }
+
+  header nav ul {
+    justify-content: space-evenly;
+  }
+
+  /*-------------------------ASIDE------------------*/
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+  }
+
+  /*-----------------------FEATURES-----------------*/
+
+  .features .features-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+  .features article {
+    margin: 0 25px;
+    align-items: center;
+    flex-basis: 35%;
+
+  }
+
+  /*----------------------REVIEWS--------------------*/
+
+  .reviews article {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*----------------------FOOTER---------------------*/
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+
+
+
+/*========================================================
+===============================
+                      FAQ Page
+==========================================================
+======================*/
+
+  .faq-content {
+    flex-basis: 80%;
+  }
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+
+/*========================================================
+===============================
+                      About Page
+==========================================================
+======================*/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .mission-description {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .chat-description .contact-description {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 45%;
+  }
+  
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/*Header*/
+
+@media only screen and (min-width: 1200px){
+  /*Desktop styles here*/
 }
 
 /* ==========================================================================
