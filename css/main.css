@@ -327,6 +327,29 @@ input[type=button] {
   background-color: #527158;
 }
 
+.mission-description {
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
@@ -493,7 +516,7 @@ footer .copyright {
     font-size: 2.25em;
     line-height: 1.333;
   }
-  
+
   h3 {
     font-size: 1.5em;
     line-height: 1.25;
@@ -640,6 +663,10 @@ footer .copyright {
     padding-top: 20px;
   }
 
+   .mission-description {
+    flex-flow:row wrap;
+  }
+  
   .mission-content p {
     width: 45%;
   }
@@ -663,7 +690,7 @@ footer .copyright {
   }
 
 
-} /*===============================END OF TABLET STYLES==============*/
+} /*===============================DESKTOP STYLES==============*/
 
 
 @media only screen and (min-width: 1200px){
@@ -710,10 +737,11 @@ footer .copyright {
 ===============ABOUT PAGE======================
 =====================================*/
 
-    .mission h2,
-    .contact-section .content-wrapper h2 {
+   .mission h2,
+   .contact-section .content-wrapper h2 {
       width: 100%;
     }
+
 
 
 /*=============================================
