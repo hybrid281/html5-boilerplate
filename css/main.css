@@ -136,20 +136,17 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
   font-style: normal;
 }
 
-.content-wrapper {
-
-}
 
 
 /* --------------------------BASE HEADER - FOOTER STYLES -----------*/
@@ -176,6 +173,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: column wrap;
   margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header nav {
@@ -237,9 +242,9 @@ aside .form {
   margin-top: 30px;
 }
 
-/*aside .form-description {
+aside .form-description {
   margin-top: 30px
-}*/
+}
 
 input [type=text] {
   box-sizing: border-box;
@@ -284,9 +289,6 @@ input[type=button] {
   margin: 30px 0;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .features p {
@@ -307,6 +309,13 @@ input[type=button] {
   width: 90%;
 }
 
+.reviews figure {
+  width: 90%;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;*/
+}
 
 /*-----------------------------ABOUT PAGE - MISSION STYLES------------------*/
 
@@ -472,16 +481,27 @@ footer .copyright {
    ========================================================================== */
 
 @media only screen and (min-width: 768px){
-  /*Tablet styles here*/
+  /******************TABLET styles here********************/
 /*General Styles*/
 
   .content-wrapper {
-    max-width: 640px;
     margin: 100px 0;
+    /*max-width: 640px;*/
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   header {
-      justify-content: space-between;
+      justify-content: space-around;
+      padding: 15px 0;
     }
 
   header .content-wrapper {
@@ -493,6 +513,13 @@ footer .copyright {
   header nav ul {
     justify-content: space-evenly;
   }
+
+  header figure {
+    width: 70%;
+  }
+
+
+
 
   /*-------------------------ASIDE------------------*/
 
@@ -520,14 +547,42 @@ footer .copyright {
     margin: 0 25px;
     align-items: center;
     flex-basis: 35%;
-
   }
 
   /*----------------------REVIEWS--------------------*/
 
   .reviews article {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+
+  }
+
+  .reviews-content {
+    display: flex;
+    flex-flow: row
+  }
+
+  .reviews p, .reviews h3{
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .reviews p {
+    width: 90%;
+  }
+
+  .reviews-text {
+    width: 90%;
+    padding: 0;
   }
 
   /*----------------------FOOTER---------------------*/
@@ -556,9 +611,7 @@ footer .copyright {
 ==========================================================
 ======================*/
 
-  header {
-    padding: 15px 0;
-  }
+
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -610,8 +663,7 @@ footer .copyright {
   }
 
 
-
-}
+} /*===============================END OF TABLET STYLES==============*/
 
 
 @media only screen and (min-width: 1200px){
@@ -619,6 +671,10 @@ footer .copyright {
 
   .content-wrapper {
     max-width: 960px;
+  }
+
+  header figure {
+    width: 50%
   }
 
    /*HERO*/
@@ -650,8 +706,9 @@ footer .copyright {
     width:
   }
 
-/*================
-===============ABOUT PAGE====*/
+/*========================================
+===============ABOUT PAGE======================
+=====================================*/
 
     .mission h2,
     .contact-section .content-wrapper h2 {
@@ -659,9 +716,9 @@ footer .copyright {
     }
 
 
-/*==================
-  ===============FAQ PAGE
-  ================*/
+/*=============================================
+  ===============FAQ PAGE=======================
+  ===============================================*/
 
   .faq h2 {
     width: 100%;
