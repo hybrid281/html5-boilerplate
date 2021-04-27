@@ -317,7 +317,8 @@ input[type=button] {
   flex-flow: row wrap;*/
 }
 
-/*-----------------------------ABOUT PAGE - MISSION STYLES------------------*/
+/*==========================ABOUT PAGE - MISSION STYLES===================
+=========================================================================*/
 
 .mission {
   display: flex;
@@ -338,7 +339,7 @@ input[type=button] {
   width: 100%;
   height: 0;
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 110%;
   overflow: hidden;
 }
 
@@ -349,6 +350,7 @@ input[type=button] {
   width: 100%;
   height: 100%;
 }
+
 
 .contact-section {
   display: flex;
@@ -651,7 +653,7 @@ footer .copyright {
 
 /*========================================================
 ===============================
-                      About Page
+                      ABOUT PAGE
 ==========================================================
 ======================*/
 
@@ -666,11 +668,14 @@ footer .copyright {
    .mission-description {
     flex-flow:row wrap;
   }
-  
+
   .mission-content p {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 45%;
+  }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -689,6 +694,10 @@ footer .copyright {
     width: 75%;
   }
 
+  
+  .map figure {
+     padding-bottom: 45%;
+  }
 
 } /*===============================DESKTOP STYLES==============*/
 
@@ -742,7 +751,9 @@ footer .copyright {
       width: 100%;
     }
 
-
+   .map figure {
+     padding-bottom: 37%;
+  }
 
 /*=============================================
   ===============FAQ PAGE=======================
