@@ -284,6 +284,11 @@ input[type=button] {
   align-items: center;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features article {
   width: 50%;
   margin: 30px 0;
@@ -694,7 +699,7 @@ footer .copyright {
     width: 75%;
   }
 
-  
+
   .map figure {
      padding-bottom: 45%;
   }
