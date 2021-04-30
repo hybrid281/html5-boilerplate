@@ -231,6 +231,8 @@ footer .social-icons p {
 
 .header-divider {
   width: 100%;
+  border: 1px solid #3a3a3a;
+  margin-top: 10px;
 }
 
 .social {
@@ -369,11 +371,15 @@ input[type=button] {
   background-color: #527158;
 }
 
+.mission h2 {
+  margin-top: 20px;
+}
+
 .mission-description {
   display: flex;
   flex-flow:column wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 
 .map figure {
@@ -442,7 +448,7 @@ footer .copyright {
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
+  margin: 10px 0 0 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -451,6 +457,7 @@ footer .copyright {
 
 .faq h2 {
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .faq-content {
@@ -553,24 +560,31 @@ footer .copyright {
 /*General Styles*/
 
   .content-wrapper {
-    margin: 100px 0;
+    margin: 20px 0;
     /*max-width: 640px;*/
   }
-  
+
+  .header-divider {
+    display: none;
+    width: 0%;
+    border: 0;
+    margin-top: 0;
+  }
+
   .hero-area .content-wrapper {
     padding-left: 10%;
     margin-top: 50px;
   }
-  
+
   .hero-area h1 {
     width: 60%;
   }
-  
-  
+
 
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
+    width: 90%;
   }
 
   h3 {
@@ -583,7 +597,7 @@ footer .copyright {
   }
 
   header {
-      justify-content: space-around;
+      justify-content: space-between;
       padding: 15px 0;
     }
 
@@ -594,13 +608,16 @@ footer .copyright {
     }
 
   header nav ul {
-    justify-content: space-evenly;
+    justify-content: right;
   }
 
   header figure {
     width: 70%;
   }
 
+  header nav ul li {
+    padding: 0 20px;
+  }
 
   /*-------------------------ASIDE------------------*/
 
@@ -693,13 +710,13 @@ footer .copyright {
   .social-icons {
     font-size: 0.75em;
   }
-  
+
   .social-icons i {
     width: 20px;
     height: 20px;
   }
-  
-  
+
+
 
 /*========================================================
 ===============================
@@ -710,15 +727,15 @@ footer .copyright {
 
 
   .faq .content-wrapper {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 42%;
   }
 
   .faq h2 {
-    width: 100%;
+    width: 90%;
   }
 
 
@@ -733,7 +750,6 @@ footer .copyright {
     justify-content: space-between;
     align-items: center;
     flex-flow: column nowrap;
-    padding-top: 20px;
   }
 
    .mission-description {
@@ -783,12 +799,12 @@ footer .copyright {
   header figure {
     width: 50%
   }
-  
+
    /*HERO*/
   .hero-area h1 {
     width: 60%;
   }
-  
+
   /*.hero-area .content-wrapper {
     margin-left: 0;
   }*/
@@ -823,7 +839,7 @@ footer .copyright {
 
    .mission h2,
    .contact-section .content-wrapper h2 {
-      width: 100%;
+      width: 90%;
     }
 
    .map figure {
@@ -835,7 +851,7 @@ footer .copyright {
   ===============================================*/
 
   .faq h2 {
-    width: 100%;
+    width: 90%;
   }
 
 }
