@@ -86,7 +86,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
 
-****GENERAL STYLES MOBILE*****/
+****GLOBAL STYLES MOBILE*****/
 
 html {
   font-size: 16px;
@@ -175,6 +175,12 @@ header .content-wrapper {
   margin: 0;
 }
 
+.header-divider {
+  width: 100%;
+  border: 1px solid #3a3a3a;
+  margin-top: 10px;
+}
+
 header figure {
     width: 60%;
     max-width: 300px;
@@ -229,11 +235,6 @@ footer .social-icons p {
   vertical-align: middle;
 }
 
-.header-divider {
-  width: 100%;
-  border: 1px solid #3a3a3a;
-  margin-top: 10px;
-}
 
 .social {
   padding-bottom: 20px;
@@ -358,6 +359,31 @@ input[type=button] {
 
 }
 
+/*----------------------------FOOTER STYLES-------------------*/
+
+footer .content-wrapper {
+  display: flex;
+  flex-flow: column nowrap; 
+  align-items: center;
+  text-align: center;
+  width: 55%;
+}
+
+footer p {
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 50px;
+}
+
+footer .copyright {
+  margin: 10px 0;
+}
+
+
 /*==========================ABOUT PAGE - MISSION STYLES===================
 =========================================================================*/
 
@@ -411,33 +437,11 @@ input[type=button] {
   margin: 0;
 }
 
-/*----------------------------FOOTER STYLES-------------------*/
-
-footer .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-  width: 55%;
-}
-
-footer p {
-  margin: 0;
-}
-
-.contact {
-  display: flex;
-  flex-flow: column wrap;
-  margin-bottom: 50px;
-}
-
-footer .copyright {
-  margin: 10px 0;
-}
 
 
 
-/*---------------FAQ STYLES--------------*/
+/*========================== FAQ PAGE =============================
+=========================================================================*/
 
 .faq {
   display: flex;
