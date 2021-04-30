@@ -153,7 +153,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 50px 30px;
 }
 
 header,
@@ -270,6 +270,7 @@ aside {
   justify-content: center;
   align-items: center;
   background-color: #527158;
+  padding-bottom: 30px;
 }
 aside .form {
   margin-top: 30px;
@@ -354,10 +355,7 @@ input[type=button] {
 
 .reviews figure {
   width: 90%;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;*/
+
 }
 
 /*==========================ABOUT PAGE - MISSION STYLES===================
@@ -369,6 +367,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+  padding-bottom: 20px;
 }
 
 .mission h2 {
@@ -405,6 +404,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+  padding-bottom: 20px;
 }
 
 .contact-content {
@@ -608,7 +608,7 @@ footer .copyright {
     }
 
   header nav ul {
-    justify-content: right;
+    justify-content: flex-end;
   }
 
   header figure {
@@ -629,7 +629,8 @@ footer .copyright {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 50%;
+    width: 40%;
+    padding-right: 40px;
   }
 
   /*-----------------------FEATURES-----------------*/
@@ -667,6 +668,10 @@ footer .copyright {
   .reviews-content {
     display: flex;
     flex-flow: row
+  }
+
+  .reviews .content-wrapper {
+    margin-bottom: 60px
   }
 
   .reviews p, .reviews h3{
@@ -798,6 +803,11 @@ footer .copyright {
 
   header figure {
     width: 50%
+  }
+
+   header .content-wrapper {
+    /*width: 80%;*/
+    max-width: 960px;
   }
 
    /*HERO*/
